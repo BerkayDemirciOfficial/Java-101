@@ -5,28 +5,28 @@ public class deneme {
 
     public static void main(String[] args) {
 
-        int number;
+        int tavanSayi, i, toplam = 0, kacAdetOrtakSayiVar = 0, ortalama;
 
-        Scanner inp = new Scanner(System.in);
+        Scanner sayiAl = new Scanner(System.in);
 
-        number = inp.nextInt();
+        System.out.println("Bir sayi giriniz: ");
+        tavanSayi = sayiAl.nextInt();
 
+        for (i = 1; i <= tavanSayi; i++) {
 
-        if (number % 2 == 1) {
+            if (i % 3 == 0 && i % 4 == 0) {
+                kacAdetOrtakSayiVar++;
+                toplam += i;
 
-            System.out.print("Weird.");
-
-
-        } else if (number == 6 || number == 8 || number == 10 || number == 12 || number == 14 || number == 16 || number == 18 || number == 20) {
-
-            System.out.print("Weird.");
-
-        } else {
-
-            System.out.print("Not Weird.");
+                System.out.println(i);
+            }
         }
+        ortalama = toplam / kacAdetOrtakSayiVar;
 
+        System.out.println(kacAdetOrtakSayiVar);
+
+        System.out.println("Girdiğiniz sayıya kadar, 3 ile 4'e bölünen sayilarin toplamı: " + toplam);
+
+        System.out.println("irdiğiniz sayıya kadar, 3 ile 4'e bölünen sayilarin ortalaması: " + ortalama);
     }
-
-
 }
