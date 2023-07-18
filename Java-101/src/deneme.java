@@ -3,19 +3,19 @@ import java.util.Scanner;
 
 public class deneme {
 
+
+    static void number(int x, int z) {
+        int y = 2;
+        x = x * y;
+       
+    }
     public static void main(String[] args) {
-
-        int user;
-
-        Scanner inp = new Scanner(System.in);
-
-        System.out.print("Enter a star number : ");
-        user = inp.nextInt();
-
-        for (int k = 1; k <= user; k++) {
-
-            System.out.print("*");
+        int y = 3;
+        int z = 2;
+        if (y != z) {
+            int x = 20;
         }
-
+        int x = 50;
+        number(x, z);
     }
 }
