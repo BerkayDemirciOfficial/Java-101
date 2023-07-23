@@ -13,7 +13,7 @@ public class BaseCalculationWithRecursive {
 
     public static void main(String[] args) {
 
-        int base, power, result;
+        int base, power,result;
 
 
         Scanner inp = new Scanner(System.in);
@@ -24,10 +24,8 @@ public class BaseCalculationWithRecursive {
         System.out.print("Power : ");
         power = inp.nextInt();
 
-        result = baseCalculation(base, power);
+        result= baseCalculation(base, power);
 
         System.out.print("Result : " + result);
-
-
     }
 }
