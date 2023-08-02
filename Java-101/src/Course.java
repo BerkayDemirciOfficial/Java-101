@@ -1,0 +1,46 @@
+public class Course {
+
+    /* Course Sınıfı Özellikleri :
+
+     Nitelikler : name,code,prefix,note,Teacher
+     Metotlar : Course() , addTeacher() , printTeacher()
+  */
+    Teacher teacher;
+    String name;
+    int code;
+    String prefix;
+    int note = 0;
+
+
+    Course( String name, int code, String prefix) {
+
+        this.name = name;
+        this.code = code;
+        this.prefix = prefix;
+
+    }
+
+    void printTeacherInfo(){
+
+        this.teacher.printTeacher();
+        System.out.println("Course : "+ name);
+        System.out.println("Code : "+ code);
+        System.out.println("Prefix : "+ prefix);
+    }
+
+    void addTeacher(Teacher teacher){
+
+        if(teacher.branch.equals(this.name)){
+            System.out.println("Course teacher matching is successfull");
+            this.teacher = teacher;
+
+        }else{
+            System.out.println("Mismatch. Try again.");
+        }
+
+
+
+    }
+
+
+}
